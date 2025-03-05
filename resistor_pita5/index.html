@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5-Band Resistor Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>5-Band Resistor Calculator</h1>
+        <div class="input-group">
+            <label for="band1">Band 1 (First Digit):</label>
+            <select id="band1">
+                <option value="0">Black (0)</option>
+                <option value="1">Brown (1)</option>
+                <option value="2">Red (2)</option>
+                <option value="3">Orange (3)</option>
+                <option value="4">Yellow (4)</option>
+                <option value="5">Green (5)</option>
+                <option value="6">Blue (6)</option>
+                <option value="7">Violet (7)</option>
+                <option value="8">Gray (8)</option>
+                <option value="9">White (9)</option>
+            </select>
+        </div>
+        <div class="input-group">
+            <label for="band2">Band 2 (Second Digit):</label>
+            <select id="band2">
+                <option value="0">Black (0)</option>
+                <option value="1">Brown (1)</option>
+                <option value="2">Red (2)</option>
+                <option value="3">Orange (3)</option>
+                <option value="4">Yellow (4)</option>
+                <option value="5">Green (5)</option>
+                <option value="6">Blue (6)</option>
+                <option value="7">Violet (7)</option>
+                <option value="8">Gray (8)</option>
+                <option value="9">White (9)</option>
+            </select>
+        </div>
+        <div class="input-group">
+            <label for="band3">Band 3 (Third Digit):</label>
+            <select id="band3">
+                <option value="0">Black (0)</option>
+                <option value="1">Brown (1)</option>
+                <option value="2">Red (2)</option>
+                <option value="3">Orange (3)</option>
+                <option value="4">Yellow (4)</option>
+                <option value="5">Green (5)</option>
+                <option value="6">Blue (6)</option>
+                <option value="7">Violet (7)</option>
+                <option value="8">Gray (8)</option>
+                <option value="9">White (9)</option>
+            </select>
+        </div>
+        <div class="input-group">
+            <label for="multiplier">Multiplier:</label>
+            <select id="multiplier">
+                <option value="1">Black (1)</option>
+                <option value="10">Brown (10)</option>
+                <option value="100">Red (100)</option>
+                <option value="1000">Orange (1K)</option>
+                <option value="10000">Yellow (10K)</option>
+                <option value="100000">Green (100K)</option>
+                <option value="1000000">Blue (1M)</option>
+                <option value="10000000">Violet (10M)</option>
+                <option value="0.1">Gold (0.1)</option>
+                <option value="0.01">Silver (0.01)</option>
+            </select>
+        </div>
+        <div class="input-group">
+            <label for="tolerance">Tolerance:</label>
+            <select id="tolerance">
+                <option value="1">Brown (±1%)</option>
+                <option value="2">Red (±2%)</option>
+                <option value="0.5">Green (±0.5%)</option>
+                <option value="0.25">Blue (±0.25%)</option>
+                <option value="0.1">Violet (±0.1%)</option>
+                <option value="0.05">Gray (±0.05%)</option>
+                <option value="5">Gold (±5%)</option>
+                <option value="10">Silver (±10%)</option>
+            </select>
+        </div>
+        <button onclick="calculateResistor()">Calculate</button>
+        <div class="result">
+            <h2>Result:</h2>
+            <p id="resistorValue"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
